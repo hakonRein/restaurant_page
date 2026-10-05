@@ -1,3 +1,56 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --primary-color: red;
+    --secondary-color: yellow;
+    --tertiary-color: rgb(158, 18, 18);
+}
+
 body {
-    background-color: red;
+    background-color: var(--secondary-color);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Header */
+
+header {
+    background-color: var(--primary-color);
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: stretch;
+}
+
+nav > button {
+    background-color: inherit;
+    color: var(--secondary-color);
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    border: none;
+    border-right: 2px solid var(--tertiary-color);
+    width: 20vh;
+    height: 50px;
+}
+
+nav > button:hover {
+    background-color: var(--tertiary-color);
 }
