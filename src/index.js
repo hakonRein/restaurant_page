@@ -9,6 +9,7 @@ const homeBtn = document.querySelector("#home-btn");
 const menuBtn = document.querySelector("#menu-btn");
 const aboutBtn = document.querySelector("#about-btn");
 
+/* Listens for menu-selections and renders the corresponding page */
 homeBtn.addEventListener("click", () => {
     content.innerHTML = "";
     content.appendChild(renderHomePage());
@@ -21,3 +22,6 @@ aboutBtn.addEventListener("click", () => {
     content.innerHTML = "";
     content.appendChild(renderAboutPage());
 })
+
+/* Home page is the startup page, rendered when loading */
+content.appendChild(renderHomePage());
