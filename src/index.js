@@ -1,3 +1,23 @@
 import "./style.css";
+import { renderHomePage } from "./home.js";
+import { renderMenuPage } from "./menu.js";
+import { renderAboutPage } from "./about.js";
 
-console.log("Hello!");
+const content = document.querySelector("#content");
+
+const homeBtn = document.querySelector("#home-btn");
+const menuBtn = document.querySelector("#menu-btn");
+const aboutBtn = document.querySelector("#about-btn");
+
+homeBtn.addEventListener("click", () => {
+    content.innerHTML = "";
+    content.appendChild(renderHomePage());
+});
+menuBtn.addEventListener("click", () => {
+    content.innerHTML = "";
+    content.appendChild(renderMenuPage());
+})
+aboutBtn.addEventListener("click", () => {
+    content.innerHTML = "";
+    content.appendChild(renderAboutPage());
+})

@@ -19,6 +19,7 @@
 
 body {
     background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -47,7 +48,7 @@ nav > button {
 
     border: none;
     border-right: 2px solid var(--tertiary-color);
-    width: 20vh;
+    width: 20vw;
     height: 50px;
 }
 
